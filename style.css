@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    
+} 
+    :root {
+      --primary-color: #FF6768;
+      --secondary-color: #263859;
+      --tertiary-color: #6B778D;
+      --light-color: #FAFAFA;
+      --dark-color: #191A19;
+    }
+    body { 
+        background-color: var(--tertiary-color);
+        font-family: Roboto , sans Sans-Serif;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .pricing {
+        background-color: var(--secondary-color);
+        border: 1px solid var(--light-color );
+        margin: 10px;
+        padding: 0 20px ;
+        border: solid 1px white;
+        text-align: center ;
+        
+    
+    }
+    .pricing:hover {
+        border-top-color: #FF6768;
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+    }
+    .pricing-container{
+        display: flex;
+        justify-content: center ;
+        max-width: 900px;
+        margin:0px auto ; 
+       
+        
+    }
+    h1{
+        padding: 5px;
+        text-align: center;
+       
+    }
+    
+    h4{
+        color: white;
+    }
+    h2 { 
+    color:var(--primary-color);
+    }
+    .period{
+        color: grey;
+    }
+    .details{
+        color: white;
+        margin: 10px;
+    }
+
+    button { 
+    color: var(--secondary-color);
+    background-color: var(--primary-color) ;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    border-color: transparent;
+    cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .details {
+        display: none;
+        text-decoration: none;
+        margin: 20px auto;
+        color: var(--light-color);
+    }
+    
+    .pricing h4 {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+@media screen and (max-width: 700px ) {
+    .pricing-container{
+       flex-direction: column; 
+    }
+    
+    ul {
+        display: none;
+    }
+    .details {
+        display: block;
+    }
+  
+}
+
+    
+    
+    
